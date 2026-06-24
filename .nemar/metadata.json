@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "dataset_id": "on004580",
-  "source": "openneuro",
-  "source_id": "ds004580",
+  "pipeline_stage": "enriched",
   "title": "Simon-conflict Task.",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Arun Singh arun.singh@usd.edu": {},
     "Rachel Cole rachel-cole@uiowa.edu": {},
@@ -12,34 +12,98 @@
     "Jim Cavanagh jcavanagh@unm.edu": {},
     "Nandakumar Narayanan nandakumar-narayanan@uiowa.edu": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds004580.v1.0.0",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "10.1101/2022.07.26.22278079",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on004580",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004580",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
-  "pipeline_stage": "seeded",
-  "bids_version": "v1.2.1",
-  "recording_modality": [
-    "beh",
-    "eeg"
-  ],
-  "datatypes": [
-    "beh",
-    "eeg"
-  ],
   "funding_references": [
-    {
-      "funder_name": "This dataset was supported by NIH P20NS123151 and R01NS100849 to NSN,"
-    },
     {
       "funder_name": "and NRSA F32 AG069445-01 to RC. All research protocols were approved by the University of Iowa"
     },
     {
-      "funder_name": "Human Subjects Review Board (IRB# 201707828)."
+      "funder_name": " Human Subjects Review Board (IRB# 201707828)."
+    },
+    {
+      "funder_name": "NIH",
+      "award_number": "P20NS123151"
+    },
+    {
+      "funder_name": "NIH",
+      "award_number": "R01NS100849"
+    },
+    {
+      "funder_name": "NIH",
+      "award_number": "F32AG069445-01"
     }
-  ]
+  ],
+  "modalities": [
+    "beh",
+    "eeg"
+  ],
+  "resource_type_specific": "Neuroimaging Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".fdt",
+    ".json",
+    ".md",
+    ".set",
+    ".tsv"
+  ],
+  "description": "This dataset comprises 64-channel EEG recordings from 146 participants (98 with Parkinson's disease and 48 healthy controls) performing a Simon conflict task. Participants responded to color-coded stimuli presented laterally on a screen, with trials varying in spatial congruence relative to the required response hand. The dataset enables investigation of conflict processing and motor control mechanisms in both healthy aging and Parkinson's disease populations. All research protocols were approved by the University of Iowa Human Subjects Review Board (IRB# 201707828).",
+  "methods_description": "EEG data were collected using a 64-channel BrainVision cap during a Simon task in which participants pressed left or right keys based on stimulus color (yellow/red for left, cyan/blue for right). Stimuli were presented on the left or right side of the screen, creating spatially congruent and incongruent trial conditions.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "Simon task"
+    },
+    {
+      "term": "conflict processing"
+    },
+    {
+      "term": "Parkinson's disease"
+    },
+    {
+      "term": "motor control"
+    },
+    {
+      "term": "event-related potentials"
+    },
+    {
+      "term": "healthy controls"
+    },
+    {
+      "term": "aging"
+    },
+    {
+      "term": "Parkinson Disease",
+      "subject_scheme": "MeSH"
+    },
+    {
+      "term": "Executive Function",
+      "subject_scheme": "MeSH"
+    }
+  ],
+  "source_hash": "93937c3f1b8fa26e8dc8e6a9efc617666a21cfcae992979e72ed9d25f911fe34"
 }
