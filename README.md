@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on004580-blue)](https://doi.org/10.82901/nemar.on004580)
+
 This experiment includes 146 subjects: 98 individuals with Parkinsons disease, 
 and 48 controls. Subjects completed  this Simon task (along with multiple other cognitive tasks) 
 while EEG was recorded with a 64-channel BrainVision cap. This task included a stimulus presented
