@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "Simon-conflict Task.",
-  "description": "This dataset comprises EEG recordings from 146 participants (98 with Parkinson's disease and 48 healthy controls) performing a Simon conflict task. Participants responded to color-coded stimuli presented laterally on a screen using a 64-channel BrainVision EEG system. The task manipulated spatial congruency between stimulus location and response hand to elicit conflict-related neural activity, enabling investigation of cognitive control mechanisms in both patient and control populations.",
-  "methods_description": "EEG data were recorded using a 64-channel BrainVision cap during performance of a Simon task. Stimuli (yellow, red, cyan, or blue) were presented to the left or right of the screen, and participants pressed corresponding left or right keys. Trials were classified as spatially congruent (stimulus side matching response hand) or incongruent (stimulus side contralateral to response hand).",
+  "description": "This dataset comprises EEG recordings from 146 participants (98 with Parkinson's disease and 48 healthy controls) performing a Simon conflict task. Participants responded to color-coded stimuli presented laterally on a screen using a 64-channel BrainVision EEG system. The task manipulated spatial congruency between stimulus location and required response hand, enabling investigation of conflict processing and motor control mechanisms in both patient and control populations.",
+  "methods_description": "EEG data were acquired using a 64-channel BrainVision cap during performance of a Simon task. Stimuli (yellow, red, cyan, or blue) were presented on the left or right side of the screen. Participants pressed left or right keys based on stimulus color (yellow/red → left; cyan/blue → right), creating spatially congruent and incongruent trial conditions. Data were analyzed separately for congruent and incongruent trials. All research protocols were approved by the University of Iowa Human Subjects Review Board (IRB# 201707828). This research was supported by NIH grants P20NS123151 and R01NS100849, and NRSA F32AG069445-01.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -22,29 +22,31 @@
       "term": "Simon task"
     },
     {
-      "term": "conflict monitoring"
+      "term": "conflict processing"
     },
     {
-      "term": "Parkinson disease",
-      "subject_scheme": "MeSH"
+      "term": "Parkinson's disease"
     },
     {
-      "term": "cognitive control"
+      "term": "healthy controls"
+    },
+    {
+      "term": "motor control"
     },
     {
       "term": "event-related potentials"
     },
     {
-      "term": "error monitoring"
-    },
-    {
-      "term": "executive function"
-    },
-    {
       "term": "response inhibition"
     },
     {
-      "term": "case-control study"
+      "term": "error monitoring"
+    },
+    {
+      "term": "BrainVision"
+    },
+    {
+      "term": "spatial congruency"
     }
   ],
   "related_identifiers": [
@@ -87,6 +89,10 @@
     {
       "funder_name": "NIH",
       "award_number": "F32AG069445-01"
+    },
+    {
+      "funder_name": "NIH",
+      "award_number": "F32AG069445"
     }
   ],
   "resource_type_specific": "Neuroimaging Dataset",
