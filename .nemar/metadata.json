@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "Simon-conflict Task.",
-  "description": "This dataset comprises EEG recordings from 146 participants (98 with Parkinson's disease and 48 healthy controls) performing a Simon conflict task. Participants responded to color-coded stimuli presented laterally on a screen using a 64-channel BrainVision EEG system. The task manipulated spatial congruency between stimulus location and required response hand, enabling investigation of conflict processing and motor control mechanisms in both patient and control populations.",
-  "methods_description": "EEG data were acquired using a 64-channel BrainVision cap during performance of a Simon task. Stimuli (yellow, red, cyan, or blue) were presented on the left or right side of the screen. Participants pressed left or right keys based on stimulus color (yellow/red → left; cyan/blue → right), creating spatially congruent and incongruent trial conditions. Data were analyzed separately for congruent and incongruent trials. All research protocols were approved by the University of Iowa Human Subjects Review Board (IRB# 201707828). This research was supported by NIH grants P20NS123151 and R01NS100849, and NRSA F32AG069445-01.",
+  "description": "EEG recordings from 146 participants (98 individuals with Parkinson's disease and 48 controls) performing a Simon conflict task. Stimuli appeared on the left or right side of the screen, and participants responded with a left or right key according to stimulus color. Trials were spatially congruent or incongruent with the response hand. Data were collected alongside other cognitive tasks to study conflict processing and midfrontal activity in Parkinson's disease.",
+  "methods_description": "EEG was recorded with a 64-channel BrainVision cap during a Simon task. Participants pressed a left key for yellow or red stimuli and a right key for cyan or blue stimuli. Stimuli were presented on the left or right side of the screen, giving congruent and incongruent trials that were analyzed separately.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -19,41 +19,28 @@
       "term": "EEG"
     },
     {
+      "term": "Parkinson Disease",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D010300"
+    },
+    {
       "term": "Simon task"
     },
     {
-      "term": "conflict processing"
+      "term": "cognitive conflict"
     },
     {
-      "term": "Parkinson's disease"
+      "term": "cognitive control"
     },
     {
-      "term": "healthy controls"
-    },
-    {
-      "term": "motor control"
-    },
-    {
-      "term": "event-related potentials"
-    },
-    {
-      "term": "response inhibition"
-    },
-    {
-      "term": "error monitoring"
-    },
-    {
-      "term": "BrainVision"
-    },
-    {
-      "term": "spatial congruency"
+      "term": "midfrontal activity"
     }
   ],
   "related_identifiers": [
     {
       "identifier": "10.1101/2022.07.26.22278079",
       "identifier_type": "DOI",
-      "relation_type": "References"
+      "relation_type": "IsDescribedBy"
     },
     {
       "identifier": "https://github.com/nemarDatasets/on004580",
@@ -61,20 +48,17 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004580",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.18112/openneuro.ds004580.v1.0.0",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on004580",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
-    {
-      "funder_name": "and NRSA F32 AG069445-01 to RC. All research protocols were approved by the University of Iowa"
-    },
     {
       "funder_name": " Human Subjects Review Board (IRB# 201707828)."
     },
@@ -88,11 +72,7 @@
     },
     {
       "funder_name": "NIH",
-      "award_number": "F32AG069445-01"
-    },
-    {
-      "funder_name": "NIH",
-      "award_number": "F32AG069445"
+      "award_number": "F32 AG069445-01"
     }
   ],
   "resource_type_specific": "Neuroimaging Dataset",
@@ -101,7 +81,7 @@
     "eeg"
   ],
   "sizes": [
-    "17.0 GB (295 files)"
+    "15.83 GB (295 files)"
   ],
   "formats": [
     ".fdt",
